@@ -1,12 +1,20 @@
 import React from 'react';
 import Styled from 'styled-components';
 
-const AppDiv = Styled.div``
+const AppDiv = Styled.div`
+  text-align: center;
+
+  header {
+    margin-top: 48px;
+  }
+`
 
 const App = () => {
   return (
     <AppDiv>
-      App Component
+      <header className="greeting">Happy Birthday Cue!</header>
+      <div className="picture">INSERT PICTURE HERE</div>
+      <section className="message">Birthday message</section>
     </AppDiv>
   );
 }
