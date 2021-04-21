@@ -2,18 +2,41 @@ import React from 'react';
 import Styled from 'styled-components';
 
 const AppDiv = Styled.div`
-  text-align: center;
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
-  header {
-    margin-top: 48px;
+
+  .heading {
+    margin-top: 96px;
+    margin-left: 24px;
+
+    .date {
+      font-family: 'Amatic SC', cursive;
+    }
+
+    .greeting {
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+    }
+  }
+
+  .picture {
+    text-align: center;
+  }
+
+  .message {
+    margin: 48px 48px;
+    font-family: 'Amatic SC', cursive;
   }
 `
 
 const App = () => {
   return (
     <AppDiv>
-      <header className="greeting">Happy Birthday Cue!</header>
-      <div className="picture">INSERT PICTURE HERE</div>
+      <header className="heading">
+        <p className="date">April 3rd 2021</p>
+        <p className="greeting">Happy Birthday Cue!</p>
+      </header>
       <section className="message">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Curabitur eu pretium metus. Suspendisse elementum, velit eu posuere ultricies, 
@@ -26,6 +49,7 @@ const App = () => {
         eros erat, pharetra sed nunc vulputate, finibus dapibus lacus. Quisque velit ipsum, facilisis et semper 
         et, rhoncus vel ligula. Donec accumsan eu augue sed fermentum. Nullam posuere pharetra elit imperdiet tincidunt.
       </section>
+      <div className="picture">INSERT PICTURE HERE</div>
     </AppDiv>
   );
 }
