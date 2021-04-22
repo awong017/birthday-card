@@ -115,7 +115,7 @@ const AppDiv = Styled.div`
         border: 2px solid gray;
         border-radius: 50%;
         width: 200px;
-        height: 275px;
+        height: 250px;
       }
   
       .sign-off {
