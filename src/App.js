@@ -1,6 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
-import Picture from './images/bruery.jpg';
+import bruery from './images/bruery.jpg';
+import balloons from './images/balloons-three.png';
 
 const AppDiv = Styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -22,24 +23,84 @@ const AppDiv = Styled.div`
     }
   }
 
-  .body {
-    display: grid;
-    grid-template-columns: 35% 65%;;
+  .message {
+    margin-top: 96px;
+    margin-left: 48px;
+    font-size: 24px;
+    font-family: 'Amatic SC', cursive;
+  }
 
-    .picture {
-      margin-left: 24px;
+  .closing {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-bottom: 24px;
+
+    .bruery-pic {
+      margin-left: 150px;
       border: 2px solid gray;
       border-radius: 50%;
       width: 300px;
       height: 400px;
     }
-  
-    .message {
-      margin: 96px 48px;
-      font-size: 24px;
-      font-family: 'Amatic SC', cursive;
+
+    .sign-off {
+      padding-left: 200px;
+      font-size: 48px;
+      font-family: 'Dancing Script', cursive;
     }
   }
+
+  @media screen and (max-width: 430px) {
+    .heading {
+      margin-top: 48px;
+  
+      .date {
+        text-align: center;
+        font-size: 20px;
+      }
+  
+      .greeting {
+        text-align: center;
+        font-size: 36px;
+      }
+
+      .balloons {
+        margin: auto;
+        height: 250px;
+        width: 200px;
+        background-image: url(${balloons});
+        background-size: cover; 
+      }
+    }
+  
+    .message {
+      margin-top: 48px;
+      margin-left: 0px;
+      padding-left: 24px;
+      padding-right: 16px;
+      font-size: 20px;
+    }
+  
+    .closing {
+      grid-template-columns: 50% 50%;
+      margin-top: 24px;
+      margin-bottom: 24px;
+  
+      .bruery-pic {
+        margin-left: 24px;
+        border: 2px solid gray;
+        border-radius: 50%;
+        width: 200px;
+        height: 275px;
+      }
+  
+      .sign-off {
+        padding-left: 48px;
+        font-size: 36px;
+      }
+    }
+  }
+
 `
 
 const App = () => {
@@ -48,11 +109,8 @@ const App = () => {
       <header className="heading">
         <p className="date">April 23rd, 2021</p>
         <p className="greeting">Happy Birthday Cue!</p>
+        <div className="balloons" />
       </header>
-      <div className="body">
-        <div>
-          <img className="picture" src={Picture} alt="bruery-pic"/> 
-        </div>
         <section className="message">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Curabitur eu pretium metus. Suspendisse elementum, velit eu posuere ultricies, 
@@ -65,7 +123,15 @@ const App = () => {
           eros erat, pharetra sed nunc vulputate, finibus dapibus lacus. Quisque velit ipsum, facilisis et semper 
           et, rhoncus vel ligula. Donec accumsan eu augue sed fermentum. Nullam posuere pharetra elit imperdiet tincidunt.
         </section>
-      </div>
+        <div className="closing">
+          <div>
+            <img className="bruery-pic" src={bruery} alt="bruery-pic"/> 
+          </div>
+          <div className="sign-off">
+            <p>Love you always!</p>
+            <p>Cue</p>
+          </div>
+        </div>
     </AppDiv>
   );
 }
