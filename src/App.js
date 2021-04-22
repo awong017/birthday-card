@@ -47,6 +47,11 @@ const AppDiv = Styled.div`
       padding-left: 200px;
       font-size: 48px;
       font-family: 'Dancing Script', cursive;
+
+      .ps {
+        font-size: 24px;
+        font-family: 'Amatic SC', cursive;
+      }
     }
   }
 
@@ -97,6 +102,10 @@ const AppDiv = Styled.div`
       .sign-off {
         padding-left: 48px;
         font-size: 36px;
+
+        .ps {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -130,6 +139,10 @@ const App = () => {
           <div className="sign-off">
             <p>Love you always!</p>
             <p>Cue</p>
+            <p className="ps">
+              P.S: I hope you love SD as much as you claim because I
+              got us an airbnb =)
+            </p>
           </div>
         </div>
     </AppDiv>
