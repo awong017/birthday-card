@@ -80,7 +80,7 @@ const AppDiv = Styled.div`
     }
   }
 
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 450px) {
     .heading {
       margin-top: 48px;
   
