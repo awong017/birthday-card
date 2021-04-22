@@ -2,6 +2,7 @@ import React from 'react';
 import Styled from 'styled-components';
 import bruery from './images/bruery.jpg';
 import balloons from './images/balloons-three.png';
+import heart from './images/heart.png';
 
 const AppDiv = Styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -25,7 +26,8 @@ const AppDiv = Styled.div`
 
   .message {
     margin-top: 96px;
-    margin-left: 48px;
+    padding-left: 48px;
+    padding-right: 16px;
     font-size: 24px;
     font-family: 'Amatic SC', cursive;
   }
@@ -33,6 +35,7 @@ const AppDiv = Styled.div`
   .closing {
     display: grid;
     grid-template-columns: 35% 65%;
+    margin-top: 48px;
     margin-bottom: 24px;
 
     .bruery-pic {
@@ -45,8 +48,21 @@ const AppDiv = Styled.div`
 
     .sign-off {
       padding-left: 200px;
+      padding-right: 16px;
       font-size: 48px;
       font-family: 'Dancing Script', cursive;
+
+      .signature {
+        display: flex;
+
+        .heart {
+          margin-top: 48px;
+          width: 48px;
+          height: 48px;
+          background-image: url(${heart});
+          background-size: cover; 
+        }
+      }
 
       .ps {
         font-size: 24px;
@@ -80,9 +96,7 @@ const AppDiv = Styled.div`
   
     .message {
       margin-top: 48px;
-      margin-left: 0px;
       padding-left: 24px;
-      padding-right: 16px;
       font-size: 20px;
     }
   
@@ -102,6 +116,13 @@ const AppDiv = Styled.div`
       .sign-off {
         padding-left: 48px;
         font-size: 36px;
+
+        .signature {
+  
+          .heart {
+            margin-top: 32px;
+          }
+        }
 
         .ps {
           font-size: 20px;
@@ -137,8 +158,11 @@ const App = () => {
             <img className="bruery-pic" src={bruery} alt="bruery-pic"/> 
           </div>
           <div className="sign-off">
-            <p>Love you always!</p>
-            <p>Cue</p>
+            <p>Love you always,</p>
+            <div className="signature">
+              <p>Cue</p>
+              <div className="heart" />
+            </div>
             <p className="ps">
               P.S: I hope you love SD as much as you claim because I
               got us an airbnb =)
