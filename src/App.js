@@ -142,23 +142,28 @@ const App = () => {
         <div className="balloons" />
       </header>
         <section className="message">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Curabitur eu pretium metus. Suspendisse elementum, velit eu posuere ultricies, 
-          nisi sem tincidunt lectus, nec vulputate diam nunc placerat eros. Pellentesque 
-          molestie convallis ligula, maximus porttitor felis consectetur eu. Cras vel dolor ultricies,
-          blandit ante in, congue sapien. Vivamus ut porta nunc. Interdum et malesuada fames ac ante 
-          ipsum primis in faucibus. In a viverra lorem, vitae interdum dui. Quisque pharetra risus quis
-          efficitur blandit. Proin tristique elementum lectus, at blandit leo tincidunt convallis. Suspendisse 
-          potenti. Ut cursus ex vel lobortis lobortis. Morbi imperdiet erat sit amet cursus commodo. Suspendisse 
-          eros erat, pharetra sed nunc vulputate, finibus dapibus lacus. Quisque velit ipsum, facilisis et semper 
-          et, rhoncus vel ligula. Donec accumsan eu augue sed fermentum. Nullam posuere pharetra elit imperdiet tincidunt.
+          Words cannot describe how I've been feeling after I met you. I still think about
+          how lucky I am that you decided to angrily swipe through Hinge one late Saturday
+          night haha. Your empathy, passion, and beauty instantly made me gravitate toward
+          you. Often times you apologize about talking about work too much, but little do
+          you know hearing you talk about your kiddos melts my heart. I hope you know I
+          am listening and that I find your work ethic extremely remarkable. It scares
+          me how much I think about you. There are times where I have to stop and catch
+          my breath just from the thought of you, but I know that just means that I've
+          fallen in love. Thank you for finding me and showing me what it's like to
+          have such a loving and supportive partner. Thank you for trusting me and
+          believing in me on my journey to becoming a software developer even when
+          there are days that I don't believe in myself. You are the light that
+          shines through even my darkest days. I can't wait to see what the future has
+          in store for us and I'm so excited to continue on this adventure with you that
+          is life. I love you and wish you the happiest of birthdays!
         </section>
         <div className="closing">
           <div>
             <img className="bruery-pic" src={bruery} alt="bruery-pic"/> 
           </div>
           <div className="sign-off">
-            <p>Love you always,</p>
+            <p>Love always,</p>
             <div className="signature">
               <p>Cue</p>
               <div className="heart" />
