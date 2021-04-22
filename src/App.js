@@ -22,6 +22,13 @@ const AppDiv = Styled.div`
       font-size: 48px;
       font-family: 'Dancing Script', cursive;
     }
+
+    .balloons {
+      height: 250px;
+      width: 200px;
+      background-image: url(${balloons});
+      background-size: cover; 
+    }
   }
 
   .message {
@@ -54,6 +61,7 @@ const AppDiv = Styled.div`
 
       .signature {
         display: flex;
+        margin-left: 24px;
 
         .heart {
           margin-top: 48px;
@@ -65,6 +73,7 @@ const AppDiv = Styled.div`
       }
 
       .ps {
+        margin-left: 24px;
         font-size: 24px;
         font-family: 'Amatic SC', cursive;
       }
@@ -87,10 +96,6 @@ const AppDiv = Styled.div`
 
       .balloons {
         margin: auto;
-        height: 250px;
-        width: 200px;
-        background-image: url(${balloons});
-        background-size: cover; 
       }
     }
   
@@ -146,8 +151,8 @@ const App = () => {
           how lucky I am that you decided to angrily swipe through Hinge one late Saturday
           night haha. Your empathy, passion, and beauty instantly made me gravitate toward
           you. Often times you apologize about talking about work too much, but little do
-          you know hearing you talk about your kiddos melts my heart. I hope you know I
-          am listening and that I find your work ethic extremely remarkable. It scares
+          you know, hearing you talk about your kiddos truly melts my heart. I hope you know I
+          am listening and that your remarkable work ethic has not gone unnoticed. It scares
           me how much I think about you. There are times where I have to stop and catch
           my breath just from the thought of you, but I know that just means that I've
           fallen in love. Thank you for finding me and showing me what it's like to
